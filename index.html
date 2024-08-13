@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Take the password test:</h1>
+        <h3>How Secure is your password? </h3>
+        <form id="passwordForm">
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="abc"><b>INCLUDE</b> - Upper case : Lower case : Special characters : Numbers
+            </div>
+            <button type="submit">Check Strength</button>
+        </form>
+        <div id="result" class="hidden">
+            <p>Password strength: <u><span id="strength"></span></u></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
